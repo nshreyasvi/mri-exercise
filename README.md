@@ -22,9 +22,16 @@ Carry out an analysis of 40 brain imaging study subjects of cortical thickness, 
 - The installation was carried out in a manner [described here](https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/dev/). Please see the section **Freesurfer Installation** for detailed information for the case of WSL 2 Ubuntu 20.04.
 - As the next step, to carry out cortical reconstruction process and extraction of information corresponding to different brain regions run the command `recon-all <subject 1> <subject 2> ...`.
 - The process usually taken 2-3 hours to finish depending on the computer specifications. In order to save time, I extracted the outputs from `recon-all` command through the NUSDAST XNAT web instance to further carry out analysis.
-- In order to extract the thickness of different brain regions in tabular format run `aparcstats2table --subjects <subject 1> <subject 2> --hemi rh --meas thickness --tablefile thickness_rh.csv` and `aparcstats2table --subjects <subject 1> <subject 2> --hemi lh --meas thickness --tablefile thickness_lh.csv`.
+- In order to extract the thickness of different brain regions in tabular format run 
+```aparcstats2table --subjects <subject 1> <subject 2> --hemi rh --meas thickness --tablefile thickness_rh.csv``` and
+```aparcstats2table --subjects <subject 1> <subject 2> --hemi lh --meas thickness --tablefile thickness_lh.csv```.
 - This will generate the `thickness_lh.csv` and `thickness_rh.csv` files similar to the ones that are present in the [repository](https://github.com/nshreyasvi/mri-exercise) repository. These CSV files contain the thickness of 35 brain regions on left hemisphere and 35 brain regions on the right hemisphere.
-- Once we obtain the thickness information, we extract the Cohen's D value for the two groups.
+- Once we obtain the thickness information, we extract the Cohen's D value.
+- For this we first need to install pandas using `pip install pandas` followed by running the Cohen's D value extraction script `python cohend.py > cohens_d.csv` which is also available in [this link](https://github.com/nshreyasvi/mri-exercise/blob/main/cohend.py).
+- This will generate the `cohens_d.csv` file containing Cohen's D value obtained for the 70 brain regions in the left and right hemisphere.
+- In order to generate the colormap corresponding to the Cohen's D value, run `python color_make.py` python script available at [this link](https://github.com/nshreyasvi/mri-exercise/blob/main/color_make.py).
+- This will generate `color_gen.txt` wherein magnitude of the Cohen's D value is represented by the `Red` color, 
+
 
 
 Visualization: CC1960_0
