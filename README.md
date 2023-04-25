@@ -43,11 +43,18 @@ In order to plot the colormap the following steps were followed:
 - After writing the above given code in the terminal, freeview will open on your computer. Double click on `brainmask` and `aparc+aseg` ensuring both of the checkboxes are ticked.
 - Click on `Color Map` and select `Lookup Table`. In `Lookup Table` select the `color_gen_class.txt` or `color_gen.txt` files to plot the color maps onto the segmented regions.
 
-## Error with WSL 2 Ubuntu 20.04
 In order to create an inflated brain with the annotations the following steps can be used:
 - Only tick the checkboxes for `inflated.thickness` for right and left hemisphere while other values are unticked and double click on either of them.
 - Click on `Annotations` and select `New`. Write the name as per your desire and for the color table file select `color_gen_class.txt` or `color_gen.txt` files and click on `OK`.
 
 The visualizations should show the positive and negative Cohen's D values as follows:
+### GIF Visualizations
+![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/axial_vis.gif)
+![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/saggital_vis.gif)
+![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/coronal_vis.gif)
 
-**Note: Currently there seems to be a bug preventing the visualization for inflated brain with custom color table to render in WSL2 Ubuntu 20.04. [Error Video Link]()**
+### Inflated brain thickness
+![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/inflated_thickness_lh.png)
+![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/inflated_thickness_rh.png)
+
+**Note: Currently there seems to be a bug preventing the visualization for inflated brain with custom color table to render in WSL2 Ubuntu 20.04. [Error Video Link](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/error_test.mp4)**
