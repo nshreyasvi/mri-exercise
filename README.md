@@ -39,12 +39,17 @@ In order to create an inflated brain with the annotations the following steps ca
 
 The visualizations should show the positive and negative Cohen's D values as follows:
 ### GIF Visualizations
+**Axial**
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/axial_vis.gif)
+**Saggital**
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/saggital_vis.gif)
+**Coronal**
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/coronal_vis.gif)
 
 ### Inflated brain thickness
+**Left Hemisphere**
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/inflated_thickness_lh.png)
+**Right Hemisphere**
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/inflated_thickness_rh.png)
 
 **Note: Currently there seems to be a bug preventing the visualization for inflated brain with custom color table to render in WSL2 Ubuntu 20.04. [Error Video Link](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/error_test.mp4)**
