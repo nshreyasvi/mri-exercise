@@ -3,20 +3,10 @@
 ### Objective 
 Carry out an analysis of 40 brain imaging study subjects of cortical thickness, comparing chronic schizophrenia cases to age and sex-matched controls by estimating Cohen's D value.
 
-## FreeSurfer Installation on WSL 2 Ubuntu 20.04
-- `wget https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/dev/freesurfer_ubuntu20-7-dev_amd64.deb`
-- `sudo apt-get install ./freesurfer_ubuntu20-7-dev_amd64.deb`
-- `echo "export XDG_RUNTIME_DIR=$HOME/.xdg" >> $HOME/.bashrc`
-- `echo "export DISPLAY=:0" >> $HOME/.bashrc`
-- `echo "export FREESURFER_HOME=/usr/local/freesurfer/7-dev" >> $HOME/.bashrc`
-- Use the form [provided here](https://surfer.nmr.mgh.harvard.edu/registration.html) to generate the `license.txt` file and copy it to the home directory.
-- `echo "export FS_LICENSE=$HOME/license.txt" >> $HOME/.bashrc`
-- `echo "source /usr/local/freesurfer/7-dev/SetUpFreeSurfer.sh" >> $HOME/.bashrc`
-- Logout and log back into the WSL 2 Ubuntu session.
-- Use `freeview` command in terminal to see if the installation was successful.
-
-## Analysis Steps
-- In this exercise, I extracted 40 subjects from the Northwestern University Schizophrenia Data and Software Tool (NUSDAST) which were balanced for age, gender and ethnicity. The dataset consisted of 20 schizophrenia subjects and 20 control subjects. Details for each of the subjects used in this analysis can be seen in `dataset_subjects.csv` file.
+## Method
+The following steps were followed to carry out the coding task:
+### Dataset
+- In this exercise, I extracted 40 subjects from the [Northwestern University Schizophrenia Data and Software Tool (NUSDAST)](http://niacal.northwestern.edu/data) which were balanced for age, gender and ethnicity. The dataset consisted of 20 schizophrenia subjects and 20 control subjects. Details for each of the subjects used in this analysis can be seen in `dataset_subjects.csv` file.
 - Once the dataset was finalized, it was downloaded from the [XNAT web-instance](https://central.xnat.org/data/projects/NUDataSharing/) by using the [XNAT Desktop Client](https://www.xnat.org/download/desktop-client/).
 - In order to perform the next stages of analysis, [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/) was installed on the Windows machine using WSL 2 (Ubuntu 20.04).
 - The installation was carried out in a manner [described here](https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/dev/). Please see the section **Freesurfer Installation** for detailed information for the case of WSL 2 Ubuntu 20.04.
@@ -58,3 +48,15 @@ The visualizations should show the positive and negative Cohen's D values as fol
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/inflated_thickness_rh.png)
 
 **Note: Currently there seems to be a bug preventing the visualization for inflated brain with custom color table to render in WSL2 Ubuntu 20.04. [Error Video Link](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/error_test.mp4)**
+
+## FreeSurfer Installation on WSL 2 Ubuntu 20.04
+- `wget https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/dev/freesurfer_ubuntu20-7-dev_amd64.deb`
+- `sudo apt-get install ./freesurfer_ubuntu20-7-dev_amd64.deb`
+- `echo "export XDG_RUNTIME_DIR=$HOME/.xdg" >> $HOME/.bashrc`
+- `echo "export DISPLAY=:0" >> $HOME/.bashrc`
+- `echo "export FREESURFER_HOME=/usr/local/freesurfer/7-dev" >> $HOME/.bashrc`
+- Use the form [provided here](https://surfer.nmr.mgh.harvard.edu/registration.html) to generate the `license.txt` file and copy it to the home directory.
+- `echo "export FS_LICENSE=$HOME/license.txt" >> $HOME/.bashrc`
+- `echo "source /usr/local/freesurfer/7-dev/SetUpFreeSurfer.sh" >> $HOME/.bashrc`
+- Logout and log back into the WSL 2 Ubuntu session.
+- Use `freeview` command in terminal to see if the installation was successful.
