@@ -7,7 +7,7 @@ Carry out an analysis of 40 brain imaging study subjects of cortical thickness, 
 The following steps were followed to carry out the coding task:
 ### Dataset
 - In this exercise, I extracted 40 subjects from the [Northwestern University Schizophrenia Data and Software Tool (NUSDAST)](http://niacal.northwestern.edu/data) which were balanced for age, gender and ethnicity. The dataset consisted of 20 schizophrenia subjects and 20 control subjects. Details for each of the subjects used in this analysis can be seen in `dataset_subjects.csv` file.
-- Once the dataset was finalized, it was downloaded from the [XNAT web-instance](https://central.xnat.org/data/projects/NUDataSharing/) by using the [XNAT Desktop Client](https://www.xnat.org/download/desktop-client/).
+- Once the dataset was finalized, it was downloaded from the [NUSDAST XNAT web-instance](https://central.xnat.org/data/projects/NUDataSharing/) by using the [XNAT Desktop Client](https://www.xnat.org/download/desktop-client/).
 - In order to perform the next stages of analysis, [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/) was installed on the Windows machine using WSL 2 (Ubuntu 20.04).
 - The installation was carried out in a manner [described here](https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/dev/). Please see the section **Freesurfer Installation** for detailed information for the case of WSL 2 Ubuntu 20.04.
 - As the next step, to carry out cortical reconstruction process and extraction of information corresponding to different brain regions run the command `recon-all <subject 1> <subject 2> ...`.
