@@ -1,4 +1,4 @@
-#No. "Label Name:" R G B A
+#No. label_name: R G B A
 1001 ctx_lh_bankssts_thickness 0 255 0 0
 1002 ctx_lh_caudalanteriorcingulate_thickness 255 0 0 0
 1003 ctx_lh_caudalmiddlefrontal_thickness 0 255 0 0

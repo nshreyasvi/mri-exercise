@@ -5,8 +5,14 @@ from numpy import var, mean, sqrt
 from pandas import Series
 import gc
 
+df = pd.read_csv('dataset_subjects.csv')
+df = df.sort_values(by=['MR ID'],ascending=True, ignore_index=True)
+new_col = df['Group']
+
 # Right Hemisphere
 aparc_df = pd.read_csv("thickness_rh.csv")
+aparc_df.sort_values('rh.aparc.thickness')
+aparc_df.insert(loc=1,column='Group',value=new_col)
 
 aparc_df_scd = aparc_df.loc[aparc_df['Group']==1]
 aparc_df_td = aparc_df.loc[aparc_df['Group']==3]
@@ -32,6 +38,8 @@ for i in range(0,len(test_columns)):
 
 #Left Hemisphere
 aparc_df = pd.read_csv("thickness_lh.csv")
+aparc_df.sort_values('lh.aparc.thickness')
+aparc_df.insert(loc=1,column='Group',value=new_col)
 
 aparc_df_scd = aparc_df.loc[aparc_df['Group']==1]
 aparc_df_td = aparc_df.loc[aparc_df['Group']==3]
