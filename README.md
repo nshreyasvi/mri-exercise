@@ -18,7 +18,8 @@ The following steps were followed to carry out the coding task:
 ### Extraction of Thickness Values
 - In order to extract the thickness of different brain regions in tabular format run 
 `aparcstats2table --subjects <subject 1> <subject 2> --hemi rh --meas thickness --tablefile thickness_rh.csv` and
-`aparcstats2table --subjects <subject 1> <subject 2> --hemi lh --meas thickness --tablefile thickness_lh.csv`. (*Optional:If volume of of different regions is required it can be done so using `asegstats2table --subjects <subject 1> <subject 2> --meas volume --tablefile aseg_stats.csv`*.)
+`aparcstats2table --subjects <subject 1> <subject 2> --hemi lh --meas thickness --tablefile thickness_lh.csv`. 
+(*Optional: If volume of of different regions is required it can be done so using `asegstats2table --subjects <subject 1> <subject 2> --meas volume --tablefile aseg_stats.csv`*.)
 - This will generate the `thickness_lh.csv` and `thickness_rh.csv` files similar to the ones that are present in the [repository](https://github.com/nshreyasvi/mri-exercise) repository. These CSV files contain the thickness of 35 brain regions on left hemisphere and 35 brain regions on the right hemisphere.
 - Once we obtain the thickness information, we extract the Cohen's D value.
 
