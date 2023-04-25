@@ -38,17 +38,21 @@ In order to create an inflated brain with the annotations the following steps ca
 - Click on `Annotations` and select `New`. Write the name as per your desire and for the color table file select `color_gen_class.txt` or `color_gen.txt` files and click on `OK`.
 
 The visualizations should show the positive and negative Cohen's D values as follows:
-### GIF Visualizations
+
 **Axial**
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/axial_vis.gif)
+
 **Saggital**
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/saggital_vis.gif)
+
 **Coronal**
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/coronal_vis.gif)
 
 ### Inflated brain thickness
+
 **Left Hemisphere**
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/inflated_thickness_lh.png)
+
 **Right Hemisphere**
 ![Alt Text](https://github.com/nshreyasvi/mri-exercise/blob/main/visualization/inflated_thickness_rh.png)
 
